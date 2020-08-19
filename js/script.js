@@ -215,8 +215,8 @@ function myFunctionMax(mediaQueriesMax){
         for (var b = 0; b < hide.length; b++) {
             hide[b].style.transform = "scale(0)";
         }
-        logo.style.transform = "scale(.7)";
-        header.style.padding = "0.2rem 3rem 0.2rem .7rem";
+        logo.style.transform = "scale(.8)";
+        header.style.padding = "0.1rem 3rem 0.1rem .7rem";
     }
 	scrollPos = (document.body.getBoundingClientRect()).top;
     });
