@@ -1,3 +1,5 @@
+////// suavizar el scroll en anchors de href ////////
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -7,6 +9,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+////// click en icono y mostrar su respectivo texto ////////
+
+////// servicios ////////
 
 var icon = document.getElementsByClassName("icon");
 var serviceText = document.getElementsByClassName("services-text");
@@ -23,6 +29,8 @@ for (var i = 0; i < icon.length; i++) {
     });
 }
 
+////// standards ////////
+
 var iconSt = document.getElementsByClassName("icon-st");
 var standardText = document.getElementsByClassName("standards-text");
 
@@ -37,6 +45,8 @@ for (var i = 0; i < iconSt.length; i++) {
         }
     });
 }
+
+////// industrias ////////
 
 var iconInd = document.getElementsByClassName("icon-ind");
 var industriasText = document.getElementsByClassName("industrias-text");
@@ -53,6 +63,8 @@ for (var i = 0; i < iconInd.length; i++) {
     });
 }
 
+////// animación de titulo de inputs en el form ////////
+
 var formInputs = document.getElementsByClassName("form");
 
 for (var i = 0; i < formInputs.length; i++) {
@@ -64,6 +76,8 @@ for (var i = 0; i < formInputs.length; i++) {
         }
     });
 }
+
+////// navbar en mobile ////////
 
 var serviciosBtn = document.getElementById("servicios-li");
 var standardsBtn = document.getElementById("standards-li");
@@ -171,6 +185,8 @@ function closeNav(){
     arrowStand.style.transform = "rotate(0deg)";
 }
 
+
+
 var incidentServ = document.getElementsByClassName("incident-service");
 var incidentText = document.getElementsByClassName("incident-text");
 
@@ -189,6 +205,8 @@ for (var i = 0; i < incidentServ.length; i++) {
         }
     });
 }
+
+////// achicar/agrandar el nav en scroll ////////
 
 var nav = document.getElementById("header");
 var hide = document.getElementsByClassName("hide");
