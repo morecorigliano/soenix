@@ -212,6 +212,7 @@ var nav = document.getElementById("header");
 var hide = document.getElementsByClassName("hide");
 var logo = document.getElementById("logo-img");
 var header = document.querySelector("header");
+var letter = document.getElementById("letters");
 
 var mediaQueriesMax = window.matchMedia("(min-width: 1024px)");
 myFunctionMax(mediaQueriesMax);
@@ -227,14 +228,22 @@ function myFunctionMax(mediaQueriesMax){
     for (var b = 0; b < hide.length; b++) {
         hide[b].style.transform = "scale(1)";
     }
-    logo.style.transform = "scale(1)";
     header.style.padding = "0.4rem 3rem 0.4rem .7rem";
+    letter.style.transform= "scale(1)";
+    setTimeout( function() {
+    logo.setAttribute("viewBox","0 0 340 151.125");
+    logo.style.transform = "scale(1)";
+    }, 100);
 	}else{
         for (var b = 0; b < hide.length; b++) {
             hide[b].style.transform = "scale(0)";
         }
+        header.style.padding = "0.2rem 3rem 0.2rem .7rem";
+        letter.style.transform= "scale(0)";
+        setTimeout( function() {
+        logo.setAttribute("viewBox","0 0 200 151.125");
         logo.style.transform = "scale(.8)";
-        header.style.padding = "0.1rem 3rem 0.1rem .7rem";
+        }, 110);
     }
 	scrollPos = (document.body.getBoundingClientRect()).top;
     });
