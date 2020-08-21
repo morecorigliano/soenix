@@ -27,11 +27,11 @@ header {
   width: 100%;
   z-index: 1500000;
   box-shadow: 0rem 0rem 1vh rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-out; }
+  -webkit-transition: transform 0.3s ease-out; }
   header #idioma-mobile {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     right: 1rem;
     display: flex;
     flex-direction: row;
@@ -73,14 +73,14 @@ nav h1 {
     width: 8vw;
     background-color: black;
     margin-bottom: 1.2vw;
-    transform-origin: top right;
-    transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
+    -webkit-transform-origin: top right;
+    -webkit-transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
     #nav-toggle span:nth-of-type(2) {
       width: 6vw; }
     #nav-toggle span:last-of-type {
       width: 4vw;
       margin-bottom: 0;
-      transform-origin: bottom right; }
+      -webkit-transform-origin: bottom right; }
 
 nav {
   width: 100vw;
@@ -121,7 +121,7 @@ nav #nav-list {
     justify-content: flex-start; }
     nav #nav-list #logo img {
       height: 1.4rem;
-      transition: transform 0.2s ease-out; }
+      -webkit-transition: transform 0.2s ease-out; }
 
 nav #nav-list .nav-li {
   display: inline;
@@ -158,29 +158,29 @@ nav #nav-list .nav-li {
   nav #nav-list .nav-li:hover .underline {
     opacity: 1; }
   nav #nav-list .nav-li:hover .underline .line {
-    animation: slideIn .2s ease-out forwards; }
+    -webkit-animation: slideIn .2s ease-out forwards; }
   nav #nav-list .nav-li:hover #under-servicios, nav #nav-list .nav-li:hover #under-standards, nav #nav-list .nav-li:hover #under-industrias {
     pointer-events: auto;
-    animation: showUnder .2s ease-out forwards; }
+    -webkit-animation: showUnder .2s ease-out forwards; }
   nav #nav-list .nav-li:hover #under-servicios li, nav #nav-list .nav-li:hover #under-standards li, nav #nav-list .nav-li:hover #under-industrias li {
     pointer-events: auto;
-    animation: slideRight .2s ease-out forwards; }
+    -webkit-animation: slideRight .2s ease-out forwards; }
 
-@keyframes showUnder {
+@-webkit-keyframes showUnder {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@keyframes slideRight {
+@-webkit-keyframes slideRight {
   0% {
     opacity: 0;
-    transform: translateX(-0.5rem); }
+    -webkit-transform: translateX(-0.5rem); }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    -webkit-transform: translateX(0); } }
 
-@keyframes slideIn {
+@-webkit-keyframes slideIn {
   0% {
     width: 10%; }
   70% {
@@ -191,7 +191,7 @@ nav #nav-list .nav-li {
 
 nav #under-servicios, nav #under-standards, nav #under-industrias {
   opacity: 0;
-  transform-origin: top center;
+  -webkit-transform-origin: top center;
   pointer-events: none;
   background-color: white;
   position: absolute;
@@ -207,7 +207,7 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     width: 150%; }
   nav #under-servicios li, nav #under-standards li, nav #under-industrias li {
     list-style: none;
-    transform: translateX(-0.5rem);
+    -webkit-transform: translateX(-0.5rem);
     opacity: 0;
     margin-left: 0;
     margin-bottom: .5rem; }
@@ -251,9 +251,9 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     letter-spacing: 0.05rem;
     color: white;
     text-align: center;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    -webkit-animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
     margin-bottom: 1rem;
     position: relative;
     top: 0;
@@ -261,10 +261,10 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     #banner h3 span {
       font-weight: 700; }
     #banner h3 .fade {
-      animation-name: fade;
-      animation-duration: 1.5s; }
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s; }
 
-@keyframes fade {
+@-webkit-keyframes fade {
   from {
     opacity: .4; }
   to {
@@ -287,14 +287,14 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     position: absolute;
     bottom: 5vh;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: moveUpDown;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; }
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-animation-name: moveUpDown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out; }
     #banner #arrow svg {
       height: 1.2rem;
-      transform: rotate(90deg); }
+      -webkit-transform: rotate(90deg); }
 
 #contacto {
   width: 100%;
@@ -384,40 +384,40 @@ footer {
       display: inline-block;
       margin-left: 0.5rem; }
 
-@keyframes moveInLeft {
+@-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-20%); }
+    -webkit-transform: translateX(-20%); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    -webkit-transform: translate(0); } }
 
-@keyframes moveUpDown {
+@-webkit-keyframes moveUpDown {
   0% {
-    transform: translateY(-2vh); }
+    -webkit-transform: translateY(-2vh); }
   50% {
-    transform: translateY(0); }
+    -webkit-transform: translateY(0); }
   100% {
-    transform: translateY(-2vh); } }
+    -webkit-transform: translateY(-2vh); } }
 
-@keyframes moveUp {
+@-webkit-keyframes moveUp {
   0% {
-    transform: translateY(10vh); }
+    -webkit-transform: translateY(10vh); }
   100% {
-    transform: translateY(0); } }
+    -webkit-transform: translateY(0); } }
 
 .arrow {
   position: absolute;
   bottom: .7rem;
   left: 50%;
-  transform: translate(-50%, -50%);
-  animation-name: moveUpDown;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-animation-name: moveUpDown;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out; }
   .arrow svg {
     height: 1.1rem;
-    transform: rotate(90deg); }
+    -webkit-transform: rotate(90deg); }
 
 .anchor {
   position: absolute;
@@ -486,7 +486,7 @@ footer {
       #services #services-icons .icon:hover svg {
         stroke-dasharray: 800;
         stroke-dashoffset: 800;
-        animation: hoverIcon 1s ease-in-out forwards; }
+        -webkit-animation: hoverIcon 1s ease-in-out forwards; }
       #services #services-icons .icon p:last-of-type {
         font-size: .6rem;
         font-weight: 400; }
@@ -521,7 +521,7 @@ footer {
       position: relative;
       top: 0;
       left: 0;
-      animation: showit .5s ease-in-out forwards; }
+      -webkit-animation: showit .5s ease-in-out forwards; }
     #services .services-text .service-info {
       width: 55%; }
       #services .services-text .service-info h3 {
@@ -584,7 +584,7 @@ footer {
       #standards #standards-icons .icon-st:hover svg {
         stroke-dasharray: 800;
         stroke-dashoffset: 800;
-        animation: hoverIcon 1s ease-in-out forwards; }
+        -webkit-animation: hoverIcon 1s ease-in-out forwards; }
       #standards #standards-icons .icon-st p:last-of-type {
         font-size: .6rem;
         font-weight: 400; }
@@ -619,7 +619,7 @@ footer {
       position: relative;
       top: 0;
       left: 0;
-      animation: showit .5s ease-in-out forwards; }
+      -webkit-animation: showit .5s ease-in-out forwards; }
     #standards .standards-text .standards-info {
       width: 55%; }
       #standards .standards-text .standards-info h3 {
@@ -684,7 +684,7 @@ footer {
       #industrias #industrias-icons .icon-ind:hover svg {
         stroke-dasharray: 800;
         stroke-dashoffset: 800;
-        animation: hoverIcon 1s ease-in-out forwards; }
+        -webkit-animation: hoverIcon 1s ease-in-out forwards; }
       #industrias #industrias-icons .icon-ind p {
         color: #191444;
         font-weight: 400; }
@@ -723,7 +723,7 @@ footer {
       position: relative;
       top: 0;
       left: 0;
-      animation: showit .5s ease-in-out forwards; }
+      -webkit-animation: showit .5s ease-in-out forwards; }
     #industrias .industrias-text .industrias-info {
       width: 55%; }
       #industrias .industrias-text .industrias-info h3 {
@@ -758,21 +758,21 @@ footer {
       display: block;
       height: 9rem; }
 
-@keyframes draw {
+@-webkit-keyframes draw {
   to {
     stroke-dashoffset: 0; } }
 
-@keyframes hoverIcon {
+@-webkit-keyframes hoverIcon {
   to {
     stroke-dashoffset: 0; } }
 
-@keyframes showit {
+@-webkit-keyframes showit {
   0% {
     opacity: 0;
-    transform: translateX(-3rem); }
+    -webkit-transform: translateX(-3rem); }
   100% {
     opacity: 1;
-    transform: translateX(0); } }
+    -webkit-transform: translateX(0); } }
 
 #banner-servicios {
   background: linear-gradient(140deg, #191444 0%, rgba(25, 20, 68, 0.95) 100%);
@@ -790,14 +790,14 @@ footer {
     position: absolute;
     bottom: 5vh;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: moveUpDown;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; }
+    -webkit-transform: translate(-50%, -50%);
+    -webkit-animation-name: moveUpDown;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out; }
     #banner-servicios #arrow svg {
       height: 1.2rem;
-      transform: rotate(90deg); }
+      -webkit-transform: rotate(90deg); }
   #banner-servicios #service-intro {
     width: 40%;
     color: white; }
@@ -956,8 +956,8 @@ footer {
       background-color: black;
       border-left: 0.5px solid rgba(117, 117, 117, 0.2);
       height: 100vh;
-      transform: translateX(100vw);
-      transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
+      -webkit-transform: translateX(100vw);
+      -webkit-transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03);
       overflow-y: scroll; }
       nav #nav-list .nav-li {
         display: block;
@@ -994,7 +994,7 @@ footer {
           left: 0;
           width: auto; }
         nav #nav-list #under-servicios li, nav #nav-list #under-standards li, nav #nav-list #under-industrias li {
-          transform: translateX(0);
+          -webkit-transform: translateX(0);
           opacity: 1;
           margin-left: 0;
           margin-bottom: .5rem; }
@@ -1173,7 +1173,7 @@ footer {
     header #idioma {
       right: 3rem; }
   #nav-toggle {
-    transform: scale(0.6); }
+    -webkit-transform: scale(0.6); }
   #banner {
     height: 130vh; }
     #banner h3 {
