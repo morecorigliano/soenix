@@ -6,7 +6,7 @@
     <title>SoeniX</title>
     <link rel="shortcut icon" type="image/png" href="img/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="alternate" hreflang="x-default"
@@ -279,7 +279,13 @@
     <div id="banner">
       <video src="img/cyber.mp4" loop muted autoplay type="video/webm"></video>
        <div id="slider">
-        <h3 id="slide-one" class="fade">We are cyber security experts, <br><span>we are Lorem Ipsum.</span></h3>
+        <h3 id="slide-one" class="fade">Hack yourself, before someone else does.</h3>
+        <div class="type-wrap">
+          <div id="typed-strings" style="display: none;">
+            <p>Leverage the advanced skills of our professional penetration testing team to uncover vulnerabilities industry standards overlook.</p>
+          </div>
+          <span id="typed"></span>
+        </div>
       </div>
         <a href="#anchor-about" id="arrow">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.569 67.984">
@@ -747,12 +753,26 @@
     </footer>
 
 </body>
+<!-- efecto scroll -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
   duration: 700,
 })
 </script>
+<!-- animacion typed banner -->
+<script src="js/typed.min.js"></script>
+<script>
+var typed = new Typed("#typed", {
+  stringsElement: '#typed-strings',
+  typeSpeed: 20,
+  backSpeed: 0,
+  backDelay: 500,
+  startDelay: 1000,
+  loop: false,
+});
+</script>
+<!-- animacion contacto -->
 <script src="js/three.r119.min.js"></script>
 <script src="js/vanta.globe.min.js"></script>
 <script>
@@ -771,5 +791,6 @@
     backgroundColor: 0xfcfcfc
   })
 </script>
+<!-- js personalizado -->
 <script src="js/script.js"></script>
 </html>

@@ -71,7 +71,7 @@ nav h1 {
     display: block;
     height: 0.8vw;
     width: 8vw;
-    background-color: #191444;
+    background-color: #001B3A;
     margin-bottom: 1.2vw;
     -webkit-transform-origin: top right;
     -webkit-transition: transform 0.3s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
@@ -141,7 +141,7 @@ nav #nav-list .nav-li {
   nav #nav-list .nav-li:first-of-type {
     margin-left: none; }
   nav #nav-list .nav-li:nth-of-type(6) {
-    background-color: #191444;
+    background-color: #001B3A;
     padding: .25rem .35rem;
     border-radius: .4rem; }
     nav #nav-list .nav-li:nth-of-type(6) .underline {
@@ -200,7 +200,7 @@ nav #nav-list .nav-li {
   70% {
     background-color: black; }
   100% {
-    background-color: #191444;
+    background-color: #001B3A;
     width: 100%; } }
 
 nav #under-servicios, nav #under-standards, nav #under-industrias {
@@ -211,13 +211,11 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 100%;
-  left: -75%;
-  width: 250%;
+  left: -70%;
+  width: 235%;
   padding: .5rem;
-  border-radius: .35rem; }
-  nav #under-servicios.eng, nav #under-standards.eng, nav #under-industrias.eng {
-    left: -55%;
-    width: 220%; }
+  border-bottom-right-radius: .35rem;
+  border-bottom-left-radius: .35rem; }
   nav #under-servicios#under-standards, nav #under-standards#under-standards, nav #under-industrias#under-standards {
     left: -25%;
     width: 150%; }
@@ -244,11 +242,7 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -262,13 +256,20 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     object-fit: cover;
     z-index: -1000; }
   #banner #slider {
-    position: relative; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    width: 65%; }
   #banner h3 {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.05rem;
     color: white;
+    text-transform: uppercase;
     text-align: center;
     -webkit-animation-name: moveInLeft;
     -webkit-animation-duration: 1s;
@@ -277,8 +278,6 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     position: relative;
     top: 0;
     left: 0; }
-    #banner h3 span {
-      font-weight: 700; }
     #banner h3 .fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 1.5s; }
@@ -288,6 +287,13 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     opacity: .4; }
   to {
     opacity: 1; } }
+  #banner .type-wrap {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    color: white; }
   #banner .btn {
     width: auto;
     display: block;
@@ -336,7 +342,7 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: #191444; }
+    color: #001B3A; }
   #contact-text p {
     font-size: 0.6rem;
     font-weight: 400;
@@ -350,7 +356,7 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
     line-height: 1.2;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
-    color: #191444; }
+    color: #001B3A; }
 
 footer {
   display: flex;
@@ -446,8 +452,9 @@ footer {
   width: 100%; }
 
 #about-us {
+  font-family: 'Quicksand', sans-serif;
   color: black;
-  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0.85) 10%), url(../img/us.jpg);
+  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0.7) 40%), url(../img/us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -462,9 +469,8 @@ footer {
     letter-spacing: 0.05rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    color: #191444; }
+    color: #001B3A; }
   #about-us #about-text {
-    font-family: 'Quicksand', sans-serif;
     font-size: 0.5rem;
     font-weight: 500;
     line-height: 1.6;
@@ -480,7 +486,8 @@ footer {
       width: 100%; }
 
 #services {
-  background-color: #191444;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #001B3A;
   width: 100%;
   overflow-x: hidden;
   padding: 2rem 0 3.5rem 0;
@@ -496,7 +503,6 @@ footer {
     text-align: center;
     color: white; }
   #services #services-icons {
-    font-family: 'Quicksand', sans-serif;
     display: grid;
     padding: .5rem 1.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -574,7 +580,7 @@ footer {
         transition: 0.4s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
       #services .services-text .service-info a:hover {
         background-color: white;
-        color: #191444;
+        color: #001B3A;
         border: none;
         box-shadow: 0rem 0rem 1vh rgba(255, 255, 255, 0.2); }
     #services .services-text .service-img img {
@@ -582,7 +588,8 @@ footer {
       height: 9rem; }
 
 #standards {
-  background-color: #191444;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #001B3A;
   width: 100%;
   overflow-x: hidden;
   padding: 2rem 0 3.5rem 0;
@@ -598,7 +605,6 @@ footer {
     text-align: center;
     color: white; }
   #standards #standards-icons {
-    font-family: 'Quicksand', sans-serif;
     display: grid;
     padding: .5rem 6rem;
     grid-template-columns: 1fr 1fr;
@@ -674,7 +680,7 @@ footer {
         transition: 0.4s cubic-bezier(0.18, 0.57, 0.5, 1.03); }
       #standards .standards-text .standards-info a:hover {
         background-color: white;
-        color: #191444;
+        color: #001B3A;
         border: none;
         box-shadow: 0rem 0rem 1vh rgba(255, 255, 255, 0.2); }
     #standards .standards-text .standards-img img {
@@ -682,6 +688,7 @@ footer {
       height: 9rem; }
 
 #industrias {
+  font-family: 'Quicksand', sans-serif;
   background-color: #fcfcfc;
   width: 100%;
   overflow-x: hidden;
@@ -696,9 +703,8 @@ footer {
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
-    color: #191444; }
+    color: #001B3A; }
   #industrias #industrias-icons {
-    font-family: 'Quicksand', sans-serif;
     display: grid;
     padding: .5rem 1.8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -716,12 +722,12 @@ footer {
         stroke-dashoffset: 800;
         -webkit-animation: hoverIcon 1s ease-in-out forwards; }
       #industrias #industrias-icons .icon-ind p {
-        color: #191444;
+        color: #001B3A;
         font-weight: 600; }
       #industrias #industrias-icons .icon-ind p:last-of-type {
         font-size: .6rem;
         font-weight: 700;
-        color: #191444; }
+        color: #001B3A; }
     #industrias #industrias-icons svg {
       height: 1.5rem; }
     #industrias #industrias-icons p {
@@ -739,7 +745,7 @@ footer {
     font-family: 'Quicksand', sans-serif;
     padding: 2rem 5rem 0 5rem;
     width: 100%;
-    color: #191444;
+    color: #001B3A;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -777,13 +783,13 @@ footer {
         letter-spacing: 0.05rem;
         padding: .3rem .5rem;
         transition: 0.4s cubic-bezier(0.18, 0.57, 0.5, 1.03);
-        background-color: #191444;
+        background-color: #001B3A;
         border: none;
         color: white;
         box-shadow: 0rem 0rem 1vh rgba(9, 8, 65, 0.2); }
       #industrias .industrias-text .industrias-info a:hover {
-        border: 0.055rem solid #191444;
-        color: #191444;
+        border: 0.055rem solid #001B3A;
+        color: #001B3A;
         background-color: transparent; }
     #industrias .industrias-text .industrias-img img {
       display: block;
@@ -806,7 +812,7 @@ footer {
     -webkit-transform: translateX(0); } }
 
 #banner-servicios {
-  background: linear-gradient(140deg, #191444 0%, rgba(25, 20, 68, 0.95) 100%);
+  background: linear-gradient(140deg, #001B3A 0%, rgba(0, 27, 58, 0.9) 100%);
   height: 100vh;
   width: 100%;
   overflow-y: hidden;
@@ -859,7 +865,7 @@ footer {
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
-    color: #191444; }
+    color: #001B3A; }
   #types #sub, #types2 #sub {
     width: 100%;
     font-size: 0.6rem;
@@ -892,7 +898,7 @@ footer {
         height: 1.4rem; }
         #types #grid .checked svg path, #types #grid .checked svg polyline, #types2 #grid .checked svg path, #types2 #grid .checked svg polyline {
           stroke-width: 8;
-          stroke: #191444;
+          stroke: #001B3A;
           fill: none; }
     #types #grid p:first-of-type, #types2 #grid p:first-of-type {
       font-size: 0.4rem;
@@ -904,7 +910,7 @@ footer {
       color: #252525;
       text-transform: uppercase; }
       #types #grid p:first-of-type span, #types2 #grid p:first-of-type span {
-        color: #191444; }
+        color: #001B3A; }
     #types #grid p:nth-of-type(2), #types2 #grid p:nth-of-type(2) {
       font-size: 0.4rem;
       font-weight: 400;
@@ -930,7 +936,7 @@ footer {
   justify-content: center; }
   .call-to-action #wrapper {
     padding: .5rem 1rem;
-    background-color: #191444;
+    background-color: #001B3A;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -984,7 +990,7 @@ footer {
       top: calc(100% + .5rem);
       right: -.8rem;
       width: 60vw;
-      background-color: #191444;
+      background-color: #001B3A;
       border-left: 0.5px solid rgba(117, 117, 117, 0.2);
       height: 100vh;
       -webkit-transform: translateX(100vw);
@@ -1166,7 +1172,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #191444;
+    background-color: #001B3A;
     background-image: none;
     overflow: hidden; }
   #contact-text {
