@@ -32,44 +32,45 @@ header {
     background-color: white; }
     header:hover nav #nav-list a {
       color: black; }
-    header:hover nav #nav-list .nav-li:nth-of-type(7) a {
+    header:hover nav #nav-list #idioma p {
+      color: black; }
+    header:hover nav #nav-list .nav-li:nth-of-type(8) a {
       color: #090B41;
       border: 1px solid #090B41; }
     header:hover nav #nav-list #logo #logo-img .cls-11 {
       fill: #191444; }
-    header:hover #idioma-mobile p {
-      color: black; }
   header.white {
     background-color: white; }
     header.white nav #nav-list a {
       color: black; }
-    header.white nav #nav-list .nav-li:nth-of-type(7) a {
+    header.white nav #nav-list #idioma p {
+      color: black; }
+    header.white nav #nav-list .nav-li:nth-of-type(8) a {
       color: #090B41;
       border: 1px solid #090B41; }
     header.white nav #nav-list #logo #logo-img .cls-11 {
       fill: #191444; }
-    header.white #idioma-mobile p {
-      color: black; }
   header #idioma-mobile {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    display: none;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     right: 1rem; }
     header #idioma-mobile p {
-      font-size: 0.32rem;
+      font-size: 0.5rem;
       font-weight: 500;
       line-height: 1.2;
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       display: inline-block;
       margin-right: .1rem;
-      color: white; }
+      color: black; }
     header #idioma-mobile svg {
-      width: .6rem;
+      width: .8rem;
       display: inline-block; }
 
 nav h1 {
@@ -109,8 +110,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
-  margin-right: .4rem; }
+  position: relative; }
 
 nav #nav-list {
   display: flex;
@@ -165,14 +165,14 @@ nav #nav-list .nav-li {
     nav #nav-list .nav-li#soc-li a p {
       display: inline;
       margin-right: .2rem; }
-  nav #nav-list .nav-li:nth-of-type(7) a {
+  nav #nav-list .nav-li:nth-of-type(8) a {
     color: #fcfcfc;
     font-weight: 700;
     border: 1px solid #fcfcfc;
     padding: .15rem .2rem; }
-  nav #nav-list .nav-li:nth-of-type(7) .underline {
+  nav #nav-list .nav-li:nth-of-type(8) .underline {
     display: none; }
-  nav #nav-list .nav-li:nth-of-type(7) a:hover {
+  nav #nav-list .nav-li:nth-of-type(8) a:hover {
     -webkit-animation: pop .5s ease-out forwards; }
 
 @-webkit-keyframes pop {
@@ -185,6 +185,23 @@ nav #nav-list .nav-li {
     nav #nav-list .nav-li a .show-options {
       display: none;
       height: .3rem; }
+  nav #nav-list .nav-li #idioma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    nav #nav-list .nav-li #idioma p {
+      color: white;
+      font-size: 0.32rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.05rem;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: .1rem; }
+    nav #nav-list .nav-li #idioma svg {
+      width: .6rem;
+      display: inline-block; }
   nav #nav-list .nav-li .underline {
     opacity: 0;
     width: 100%;
@@ -912,7 +929,7 @@ footer {
         height: 1.4rem; }
         #types #grid .checked svg path, #types #grid .checked svg polyline, #types2 #grid .checked svg path, #types2 #grid .checked svg polyline {
           stroke-width: 8;
-          stroke: #090B41;
+          stroke: #36BA5A;
           fill: none; }
     #types #grid p:first-of-type, #types2 #grid p:first-of-type {
       font-size: 0.4rem;
@@ -1026,7 +1043,7 @@ footer {
 
 #red-blue-about, #red-about, #blue-about {
   color: black;
-  background: white;
+  background: #fcfcfc;
   padding: 3rem;
   width: 100%;
   position: relative; }
@@ -1050,18 +1067,28 @@ footer {
     letter-spacing: 0.05rem;
     margin-bottom: 1rem; }
   #red-blue-about#red-about, #red-about#red-about, #blue-about#red-about {
-    background-color: #A31717;
+    background: linear-gradient(104deg, rgba(163, 23, 23, 0.9) 0%, rgba(163, 23, 23, 0.8) 100%), url(../img/red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
     clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
     margin-top: -3rem; }
   #red-blue-about#blue-about, #red-about#blue-about, #blue-about#blue-about {
-    background-color: #131A81;
+    background: linear-gradient(104deg, rgba(19, 26, 129, 0.9) 0%, rgba(19, 26, 129, 0.8) 100%), url(../img/blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    margin-top: -3rem;
-    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);
-    padding-bottom: 1rem; }
+    margin-top: -2.5rem;
+    margin-bottom: 1.5rem;
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%); }
   #red-blue-about .about-section, #red-about .about-section, #blue-about .about-section {
     margin-bottom: 2rem; }
+    #red-blue-about .about-section:last-of-type, #red-about .about-section:last-of-type, #blue-about .about-section:last-of-type {
+      margin-bottom: 0; }
   #red-blue-about .about-text, #red-about .about-text, #blue-about .about-text {
     font-size: 0.5rem;
     font-weight: 500;
@@ -1151,7 +1178,7 @@ footer {
 
 #soc-about {
   color: black;
-  background: white;
+  background: #fcfcfc;
   padding: 3rem;
   width: 100%;
   position: relative; }
@@ -1175,7 +1202,7 @@ footer {
       color: #090B41; }
 
 #soc-grid {
-  background-color: white;
+  background-color: #fcfcfc;
   width: 100%;
   color: black;
   padding: 0 3rem 3rem 3rem; }
@@ -1204,7 +1231,7 @@ footer {
         height: 1.4rem; }
         #soc-grid #grid .checked svg path, #soc-grid #grid .checked svg polyline {
           stroke-width: 8;
-          stroke: #090B41;
+          stroke: #36BA5A;
           fill: none; }
     #soc-grid #grid p {
       text-align: center;
@@ -1222,19 +1249,20 @@ footer {
     font-size: 7vw; }
   header {
     background-color: white;
-    padding: 0.4rem;
+    padding: .5rem .7rem;
     z-index: 454688888888; }
-    header:hover nav #nav-list .nav-li:nth-of-type(7) a {
+    header:hover nav #nav-list .nav-li:nth-of-type(8) a {
       color: #fcfcfc;
       border: none; }
+    header:hover nav #nav-list .nav-li#redblue-li {
+      background: transparent;
+      padding: 0;
+      border-radius: 0; }
+      header:hover nav #nav-list .nav-li#redblue-li a {
+        color: #fcfcfc; }
     header #idioma-mobile {
       display: flex;
       right: calc(14vw + 0.8rem); }
-      header #idioma-mobile p {
-        color: black;
-        font-size: .5rem; }
-      header #idioma-mobile svg {
-        width: .8rem; }
     header nav {
       left: 0;
       display: flex;
@@ -1266,26 +1294,20 @@ footer {
           margin: 0;
           margin-bottom: 1rem; }
           header nav #nav-list .nav-li#redblue-li {
-            background: linear-gradient(110deg, #a31717 0%, #a31717 50%, #131a81 50%, #131a81 100%);
-            padding: .15rem .25rem;
-            border-radius: .2rem;
-            text-align: center; }
+            background: transparent;
+            padding: 0;
+            border-radius: 0; }
             header nav #nav-list .nav-li#redblue-li a {
-              color: #fcfcfc;
-              text-align: center; }
-          header nav #nav-list .nav-li:nth-of-type(7) a {
+              color: #fcfcfc; }
+          header nav #nav-list .nav-li:nth-of-type(8) a {
             color: #fcfcfc;
             font-weight: 500;
             border: none;
             padding: 0; }
-          header nav #nav-list .nav-li:nth-of-type(7) a:hover {
+          header nav #nav-list .nav-li:nth-of-type(8) a:hover {
             -webkit-animation: none; }
           header nav #nav-list .nav-li .underline {
             display: none; }
-          header nav #nav-list .nav-li:nth-of-type(6) {
-            background-color: transparent;
-            padding: 0;
-            border-radius: 0; }
           header nav #nav-list .nav-li#logo-li {
             display: none; }
           header nav #nav-list .nav-li a {
@@ -1381,7 +1403,9 @@ footer {
       width: 100%;
       margin-bottom: 2rem; }
       #services .services-text .service-info a {
-        width: 100%; }
+        display: block;
+        width: 100%;
+        text-align: center; }
     #services .services-text .service-img {
       display: block;
       display: flex;
@@ -1408,7 +1432,9 @@ footer {
       width: 100%;
       margin-bottom: 2rem; }
       #standards .standards-text .standards-info a {
-        width: 100%; }
+        display: block;
+        width: 100%;
+        text-align: center; }
     #standards .standards-text .standards-img {
       display: block;
       display: flex;
@@ -1438,7 +1464,9 @@ footer {
       width: 100%;
       margin-bottom: 2rem; }
       #industrias .industrias-text .industrias-info a {
-        width: 100%; }
+        display: block;
+        width: 100%;
+        text-align: center; }
     #industrias .industrias-text .industrias-img {
       display: block;
       display: flex;
@@ -1495,9 +1523,13 @@ footer {
         #types #grid .grid-item:last-of-type, #types2 #grid .grid-item:last-of-type {
           margin-bottom: 0; }
   #red-blue-about, #red-about, #blue-about {
-    padding: 3rem 2rem; }
+    padding: 2rem; }
     #red-blue-about#red-about, #red-blue-about#blue-about, #red-about#red-about, #red-about#blue-about, #blue-about#red-about, #blue-about#blue-about {
       clip-path: none; }
+      #red-blue-about#red-about#red-about, #red-blue-about#blue-about#red-about, #red-about#red-about#red-about, #red-about#blue-about#red-about, #blue-about#red-about#red-about, #blue-about#blue-about#red-about {
+        background-position: right; }
+      #red-blue-about#red-about#blue-about, #red-blue-about#blue-about#blue-about, #red-about#red-about#blue-about, #red-about#blue-about#blue-about, #blue-about#red-about#blue-about, #blue-about#blue-about#blue-about {
+        margin-top: 0; }
     #red-blue-about .about-text, #red-about .about-text, #blue-about .about-text {
       font-size: 0.5rem;
       font-weight: 500;

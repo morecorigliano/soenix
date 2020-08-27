@@ -210,14 +210,13 @@ for (var i = 0; i < incidentServ.length; i++) {
 
 var nav = document.getElementById("header");
 var hide = document.getElementsByClassName("hide");
-var idioma = document.getElementById("idioma-mobile");
 var logo = document.getElementById("logo-img");
 var header = document.querySelector("header");
 var letter = document.getElementById("letters");
 
-var mediaQueriesMax = window.matchMedia("(min-width: 1024px)");
+var mediaQueriesMax = window.matchMedia("(min-width: 1025px)");
 myFunctionMax(mediaQueriesMax);
-mediaQueriesMax.addListener(myFunction);
+mediaQueriesMax.addListener(myFunctionMax);
 
 function myFunctionMax(mediaQueriesMax){ 
   
@@ -232,7 +231,6 @@ function myFunctionMax(mediaQueriesMax){
     for (var b = 0; b < hide.length; b++) {
         hide[b].style.transform = "scale(1)";
     }
-    idioma.style.display = "flex";
     header.style.padding = "0.4rem 3rem 0.4rem .7rem";
     letter.style.transform= "scale(1)";
     setTimeout( function() {
@@ -243,7 +241,6 @@ function myFunctionMax(mediaQueriesMax){
         for (var b = 0; b < hide.length; b++) {
             hide[b].style.transform = "scale(0)";
         }
-        idioma.style.display = "none";
         header.style.padding = "0.2rem 3rem 0.2rem .7rem";
         letter.style.transform= "scale(0)";
         setTimeout( function() {
