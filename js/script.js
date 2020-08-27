@@ -206,10 +206,11 @@ for (var i = 0; i < incidentServ.length; i++) {
     });
 }
 
-////// achicar/agrandar el nav en scroll ////////
+////// cambias en el nav ////////
 
 var nav = document.getElementById("header");
 var hide = document.getElementsByClassName("hide");
+var idioma = document.getElementById("idioma-mobile");
 var logo = document.getElementById("logo-img");
 var header = document.querySelector("header");
 var letter = document.getElementById("letters");
@@ -222,12 +223,16 @@ function myFunctionMax(mediaQueriesMax){
   
   if(mediaQueriesMax.matches){
 
+    ////// achicar/agrandar en scroll ////////
+
     var scrollPos = 0;
     window.addEventListener('scroll', function(){
+    "use strict";
     if ((document.body.getBoundingClientRect()).top > scrollPos){
     for (var b = 0; b < hide.length; b++) {
         hide[b].style.transform = "scale(1)";
     }
+    idioma.style.display = "flex";
     header.style.padding = "0.4rem 3rem 0.4rem .7rem";
     letter.style.transform= "scale(1)";
     setTimeout( function() {
@@ -238,6 +243,7 @@ function myFunctionMax(mediaQueriesMax){
         for (var b = 0; b < hide.length; b++) {
             hide[b].style.transform = "scale(0)";
         }
+        idioma.style.display = "none";
         header.style.padding = "0.2rem 3rem 0.2rem .7rem";
         letter.style.transform= "scale(0)";
         setTimeout( function() {
@@ -246,8 +252,11 @@ function myFunctionMax(mediaQueriesMax){
         }, 110);
     }
 	scrollPos = (document.body.getBoundingClientRect()).top;
+    if (document.body.scrollTop >= 180 || document.documentElement.scrollTop >= 180) {
+        nav.classList.add("white");
+    } else{
+        nav.classList.remove("white");
+    }
     });
-
-  }
-
+    }
 }
