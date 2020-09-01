@@ -153,7 +153,7 @@ header {
             stroke: #fff;
             fill: none;
             stroke-width: 3; }
-        header.mobile nav #nav-list #under-servicios, header.mobile nav #nav-list #under-standards, header.mobile nav #nav-list #under-industrias {
+        header.mobile nav #nav-list #under-servicios, header.mobile nav #nav-list #under-standards, header.mobile nav #nav-list #under-industrias, header.mobile nav #nav-list #under-soc {
           display: none;
           opacity: 1;
           pointer-events: visible;
@@ -164,17 +164,17 @@ header {
           width: auto;
           padding: 0;
           box-shadow: none; }
-          header.mobile nav #nav-list #under-servicios#under-standards, header.mobile nav #nav-list #under-standards#under-standards, header.mobile nav #nav-list #under-industrias#under-standards {
+          header.mobile nav #nav-list #under-servicios#under-standards, header.mobile nav #nav-list #under-standards#under-standards, header.mobile nav #nav-list #under-industrias#under-standards, header.mobile nav #nav-list #under-soc#under-standards {
             left: 0;
             width: auto; }
-          header.mobile nav #nav-list #under-servicios li, header.mobile nav #nav-list #under-standards li, header.mobile nav #nav-list #under-industrias li {
+          header.mobile nav #nav-list #under-servicios li, header.mobile nav #nav-list #under-standards li, header.mobile nav #nav-list #under-industrias li, header.mobile nav #nav-list #under-soc li {
             -webkit-transform: translateX(0);
             opacity: 1;
             margin-left: 0;
             margin-bottom: .5rem; }
-            header.mobile nav #nav-list #under-servicios li:last-of-type, header.mobile nav #nav-list #under-standards li:last-of-type, header.mobile nav #nav-list #under-industrias li:last-of-type {
+            header.mobile nav #nav-list #under-servicios li:last-of-type, header.mobile nav #nav-list #under-standards li:last-of-type, header.mobile nav #nav-list #under-industrias li:last-of-type, header.mobile nav #nav-list #under-soc li:last-of-type {
               margin-bottom: .1rem; }
-            header.mobile nav #nav-list #under-servicios li a, header.mobile nav #nav-list #under-standards li a, header.mobile nav #nav-list #under-industrias li a {
+            header.mobile nav #nav-list #under-servicios li a, header.mobile nav #nav-list #under-standards li a, header.mobile nav #nav-list #under-industrias li a, header.mobile nav #nav-list #under-soc li a {
               text-transform: none;
               font-weight: 300; }
         header.mobile nav #nav-list #idioma-li {
@@ -263,17 +263,6 @@ nav #nav-list .nav-li {
       color: #fcfcfc; }
     nav #nav-list .nav-li#redblue-li.es {
       background: linear-gradient(110deg, #a31717 0%, #a31717 50%, #131a81 50%, #131a81 100%); }
-  nav #nav-list .nav-li#soc-li a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; }
-    nav #nav-list .nav-li#soc-li a svg {
-      display: inline;
-      height: .62rem; }
-    nav #nav-list .nav-li#soc-li a p {
-      display: inline;
-      margin-right: .2rem; }
   nav #nav-list .nav-li:nth-of-type(8) a {
     color: #fcfcfc;
     font-weight: 700;
@@ -330,10 +319,10 @@ nav #nav-list .nav-li {
     opacity: 1; }
   nav #nav-list .nav-li:hover .underline .line {
     -webkit-animation: slideIn .2s ease-out forwards; }
-  nav #nav-list .nav-li:hover #under-servicios, nav #nav-list .nav-li:hover #under-standards, nav #nav-list .nav-li:hover #under-industrias {
+  nav #nav-list .nav-li:hover #under-servicios, nav #nav-list .nav-li:hover #under-standards, nav #nav-list .nav-li:hover #under-industrias, nav #nav-list .nav-li:hover #under-soc {
     pointer-events: auto;
     -webkit-animation: showUnder .2s ease-out forwards; }
-  nav #nav-list .nav-li:hover #under-servicios li, nav #nav-list .nav-li:hover #under-standards li, nav #nav-list .nav-li:hover #under-industrias li {
+  nav #nav-list .nav-li:hover #under-servicios li, nav #nav-list .nav-li:hover #under-standards li, nav #nav-list .nav-li:hover #under-industrias li, nav #nav-list .nav-li:hover #under-soc li {
     pointer-events: auto;
     -webkit-animation: slideRight .2s ease-out forwards; }
 
@@ -360,7 +349,7 @@ nav #nav-list .nav-li {
     background-color: #090B41;
     width: 100%; } }
 
-nav #under-servicios, nav #under-standards, nav #under-industrias {
+nav #under-servicios, nav #under-standards, nav #under-industrias, nav #under-soc {
   opacity: 0;
   -webkit-transform-origin: top center;
   pointer-events: none;
@@ -373,23 +362,23 @@ nav #under-servicios, nav #under-standards, nav #under-industrias {
   padding: .5rem;
   border-bottom-right-radius: .35rem;
   border-bottom-left-radius: .35rem; }
-  nav #under-servicios#under-standards, nav #under-standards#under-standards, nav #under-industrias#under-standards {
+  nav #under-servicios#under-standards, nav #under-servicios#under-soc, nav #under-standards#under-standards, nav #under-standards#under-soc, nav #under-industrias#under-standards, nav #under-industrias#under-soc, nav #under-soc#under-standards, nav #under-soc#under-soc {
     left: -25%;
     width: 150%; }
-  nav #under-servicios#under-industrias, nav #under-standards#under-industrias, nav #under-industrias#under-industrias {
+  nav #under-servicios#under-industrias, nav #under-standards#under-industrias, nav #under-industrias#under-industrias, nav #under-soc#under-industrias {
     left: -45%;
     width: 190%; }
-  nav #under-servicios li, nav #under-standards li, nav #under-industrias li {
+  nav #under-servicios li, nav #under-standards li, nav #under-industrias li, nav #under-soc li {
     list-style: none;
     -webkit-transform: translateX(-0.5rem);
     opacity: 0;
     margin-left: 0;
     margin-bottom: .5rem; }
-    nav #under-servicios li:first-of-type, nav #under-standards li:first-of-type, nav #under-industrias li:first-of-type {
+    nav #under-servicios li:first-of-type, nav #under-standards li:first-of-type, nav #under-industrias li:first-of-type, nav #under-soc li:first-of-type {
       margin-top: .5rem; }
-    nav #under-servicios li:last-of-type, nav #under-standards li:last-of-type, nav #under-industrias li:last-of-type {
+    nav #under-servicios li:last-of-type, nav #under-standards li:last-of-type, nav #under-industrias li:last-of-type, nav #under-soc li:last-of-type {
       margin-bottom: .1rem; }
-    nav #under-servicios li:hover a, nav #under-standards li:hover a, nav #under-industrias li:hover a {
+    nav #under-servicios li:hover a, nav #under-standards li:hover a, nav #under-industrias li:hover a, nav #under-soc li:hover a {
       color: #313184; }
 
 #body-home {
@@ -987,6 +976,19 @@ footer {
     #banner-servicios #arrow svg {
       height: 1.2rem;
       -webkit-transform: rotate(90deg); }
+  #banner-servicios .ask {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 0.45rem;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    color: #fcfcfc;
+    text-transform: uppercase; }
+    #banner-servicios .ask span {
+      font-size: .7rem; }
   #banner-servicios #service-intro {
     width: 40%;
     color: white; }
@@ -1008,6 +1010,8 @@ footer {
   width: 100%;
   overflow-x: hidden;
   padding: 2rem 4rem 2rem 4rem; }
+  #types#types2, #types2#types2 {
+    padding-top: 0; }
   #types h4, #types2 h4 {
     width: 100%;
     font-size: 0.8rem;
@@ -1079,6 +1083,27 @@ footer {
       width: 100%;
       color: #252525;
       margin-bottom: .3rem; }
+
+#info {
+  padding: 2rem 4rem 1rem 4rem; }
+  #info h4 {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #090B41; }
+  #info p {
+    font-size: 0.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    color: #252525; }
+    #info p span {
+      color: #090B41; }
 
 .call-to-action {
   margin-bottom: 2rem;
@@ -1687,6 +1712,12 @@ footer {
       width: 100%; }
     #banner-servicios #service-intro {
       width: 100%;
+      margin-bottom: .5rem; }
+    #banner-servicios .ask {
+      position: relative;
+      top: 0;
+      left: 0;
+      -webkit-transform: none;
       margin-bottom: 1rem; }
   #types, #types2 {
     padding: 2rem; }
@@ -1696,6 +1727,8 @@ footer {
         margin-bottom: 2rem; }
         #types #grid .grid-item:last-of-type, #types2 #grid .grid-item:last-of-type {
           margin-bottom: 0; }
+  #info {
+    padding: 2rem 2rem 0 2rem; }
   #red-blue-about, #red-about, #blue-about {
     padding: 2rem; }
     #red-blue-about#red-about, #red-blue-about#blue-about, #red-about#red-about, #red-about#blue-about, #blue-about#red-about, #blue-about#blue-about {

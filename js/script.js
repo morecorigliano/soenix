@@ -82,12 +82,15 @@ for (var i = 0; i < formInputs.length; i++) {
 var serviciosBtn = document.getElementById("servicios-li");
 var standardsBtn = document.getElementById("standards-li");
 var industriaBtn = document.getElementById("industrias-li");
+var socBtn = document.getElementById("soc-li");
 var serviciosOpt = document.getElementById("under-servicios");
+var socOpt = document.getElementById("under-soc");
 var standardsOpt = document.getElementById("under-standards");
 var industriasOpt = document.getElementById("under-industrias");
 var arrowServ = document.getElementById("arrow-serv");
 var arrowInd = document.getElementById("arrow-ind");
 var arrowStand = document.getElementById("arrow-sta");
+var arrowSoc = document.getElementById("arrow-soc");
 
 var navToggle = document.getElementById("nav-toggle");
 var body = document.body;
@@ -109,6 +112,7 @@ function myFunction(mediaQueries){
       header.classList.remove("less-pad");
       navToggle.addEventListener("click", OpenClose);
       serviciosBtn.addEventListener('click', openServicios);
+      socBtn.addEventListener('click', openSoc);
       standardsBtn.addEventListener('click', openStandards);
       industriaBtn.addEventListener('click', openIndustrias);
 
@@ -148,6 +152,19 @@ function myFunction(mediaQueries){
         }else{
             industriasOpt.style.display = "none"; 
             arrowInd.style.transform = "rotate(0deg)";
+        }
+    };
+
+    var timesSoc = 1;
+    
+    function openSoc(){
+        timesSoc++;
+        if(timesSoc % 2 == 0){
+            socOpt.style.display = "block";
+            arrowSoc.style.transform = "rotate(180deg)";
+        }else{
+            socOpt.style.display = "none"; 
+            arrowSoc.style.transform = "rotate(0deg)";
         }
     };
 
