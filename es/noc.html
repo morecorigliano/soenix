@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <body id="body-home">
 
   <header id="header">
-    <nav>
+    <nav class="nav-es">
       <h1>SoeniX</h1>
       <a href="index.html" id="logo-mobile">   
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 151.125">
@@ -170,14 +170,12 @@
                   </svg>
               </a>
               <ul id="under-servicios">
-                <li class="cyber close"><a href="servicios/analisis-forense.html">Análisis cibernético forense</a></li>
                 <li class="incident close"><a href="servicios/respuesta-incidentes.html">Respuesta a Incidentes</a></li>
                 <li class="remote close"><a href="servicios/preparacion-trabajo-remoto.html">Evaluación de Preparación para Trabajo Remoto</a></li>
                 <li class="framework close"><a href="servicios/evaluacion-infraestructura.html">Evaluación de Infraestructura</a></li>
                 <li class="risk close"><a href="servicios/evaluacion-riesgos.html">Evaluación de Riesgos</a></li>
                 <li class="pci close"><a href="servicios/cumplimiento-pci-dss.html">Cumplimiento de PCI DSS</a></li>
                 <li class="penetration close"><a href="servicios/pruebas-penetracion.html">Pruebas de Penetración</a></li>
-                <li class="soc close"><a href="servicios/auditoria-soc.html">Auditoría SOC 2</a></li>
                 <li class="social close"><a href="servicios/ingenieria-social.html">Ingeniería Social</a></li>
                 <li class="vendor close"><a href="servicios/riesgo-proveedores.html">Gestión de Riesgos de Proveedores</a></li>
                 <li class="virtual close"><a href="servicios/ciso-virtual.html">CISO Virtual</a></li>
@@ -214,27 +212,8 @@
                 <span class="line"></span>
               </div>
             </li>
-            <li id="industrias-li" class="nav-li hide">
-              <a href="index.html#anchor-industrias">
-                  <p>Industrias</p>  
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54.5 29.5" style="enable-background:new 0 0 54.5 29.5;" xml:space="preserve" class="show-options" id="arrow-ind">
-                  <defs>
-                  </defs>
-                  <polyline class="st0" points="1.5,3 26.5,28 53,1.5 "/>
-                  </svg>
-              </a>
-              <ul id="under-industrias">
-                <li class="healthcare close"><a href="industrias/healthcare.html">Cuidado de la salud</a></li>
-                <li class="banks close"><a href="industrias/banks.html">Bancos y uniones de crédito</a></li>
-                <li class="legal close"><a href="industrias/legal.html">Legal</a></li>
-                <li class="education close"><a href="industrias/education.html">Educación</a></li>
-                <li class="nonprofit close"><a href="industrias/nonprofit.html">Sin fines de lucro</a></li>
-                <li class="gov close"><a href="industrias/government.html">Gobierno</a></li>
-                <li class="manufacturing close"><a href="industrias/manufacturing.html">Fábricas</a></li>
-                <li class="retail close"><a href="industrias/retail.html">Minoristas</a></li>
-                <li class="professional close"><a href="industrias/professional.html">Servicios profesionales</a></li>
-                <li class="financial close"><a href="industrias/financial.html">Servicios financieros</a></li>
-              </ul>
+            <li class="nav-li hide" id="security-li">
+              <a href="security-ops.html">Ops de seguridad</a>
               <div class="underline">
                 <span class="line"></span>
               </div>
@@ -372,6 +351,31 @@
                   </g>
                 </svg>    
               </a>
+            </li>
+            <li id="industrias-li" class="nav-li hide">
+              <a href="index.html#anchor-industrias">
+                  <p>Industrias</p>  
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54.5 29.5" style="enable-background:new 0 0 54.5 29.5;" xml:space="preserve" class="show-options" id="arrow-ind">
+                  <defs>
+                  </defs>
+                  <polyline class="st0" points="1.5,3 26.5,28 53,1.5 "/>
+                  </svg>
+              </a>
+              <ul id="under-industrias">
+                <li class="healthcare close"><a href="industrias/healthcare.html">Cuidado de la salud</a></li>
+                <li class="banks close"><a href="industrias/banks.html">Bancos y uniones de crédito</a></li>
+                <li class="legal close"><a href="industrias/legal.html">Legal</a></li>
+                <li class="education close"><a href="industrias/education.html">Educación</a></li>
+                <li class="nonprofit close"><a href="industrias/nonprofit.html">Sin fines de lucro</a></li>
+                <li class="gov close"><a href="industrias/government.html">Gobierno</a></li>
+                <li class="manufacturing close"><a href="industrias/manufacturing.html">Fábricas</a></li>
+                <li class="retail close"><a href="industrias/retail.html">Minoristas</a></li>
+                <li class="professional close"><a href="industrias/professional.html">Servicios profesionales</a></li>
+                <li class="financial close"><a href="industrias/financial.html">Servicios financieros</a></li>
+              </ul>
+              <div class="underline">
+                <span class="line"></span>
+              </div>
             </li>
             <li class="nav-li close hide">
               <a href="index.html#anchor-about">Nosotros</a>
@@ -624,9 +628,12 @@
    </div>
    </div>
 
+   <div id="call-to">
+    <video src="../../img/call-to.mp4" muted autoplay loop></video>
+    <p class="text">No esperes más...</p>
     <a href="index.html#anchor-contacto" class="call-to-action">
       <div id="wrapper">
-      <p>Solicita UN presupuesto</p>
+      <p>Pregunta a nuestros expertos</p>
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 339.8 235.5" style="enable-background:new 0 0 339.8 235.5;" xml:space="preserve">
       <defs>
       </defs>
@@ -639,6 +646,7 @@
       </svg>
       </div>
     </a>
+  </div>
 
     </main>
 

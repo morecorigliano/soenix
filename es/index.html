@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <body id="body-home">
 
   <header id="header">
-    <nav>
+    <nav class="nav-es">
       <h1>SoeniX</h1>
       <a href="index.html" id="logo-mobile">   
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 151.125">
@@ -170,14 +170,12 @@
                   </svg>
               </a>
               <ul id="under-servicios">
-                <li class="cyber close"><a href="servicios/analisis-forense.html">Análisis cibernético forense</a></li>
                 <li class="incident close"><a href="servicios/respuesta-incidentes.html">Respuesta a Incidentes</a></li>
                 <li class="remote close"><a href="servicios/preparacion-trabajo-remoto.html">Evaluación de Preparación para Trabajo Remoto</a></li>
                 <li class="framework close"><a href="servicios/evaluacion-infraestructura.html">Evaluación de Infraestructura</a></li>
                 <li class="risk close"><a href="servicios/evaluacion-riesgos.html">Evaluación de Riesgos</a></li>
                 <li class="pci close"><a href="servicios/cumplimiento-pci-dss.html">Cumplimiento de PCI DSS</a></li>
                 <li class="penetration close"><a href="servicios/pruebas-penetracion.html">Pruebas de Penetración</a></li>
-                <li class="soc close"><a href="servicios/auditoria-soc.html">Auditoría SOC 2</a></li>
                 <li class="social close"><a href="servicios/ingenieria-social.html">Ingeniería Social</a></li>
                 <li class="vendor close"><a href="servicios/riesgo-proveedores.html">Gestión de Riesgos de Proveedores</a></li>
                 <li class="virtual close"><a href="servicios/ciso-virtual.html">CISO Virtual</a></li>
@@ -214,27 +212,8 @@
                 <span class="line"></span>
               </div>
             </li>
-            <li id="industrias-li" class="nav-li hide">
-              <a href="index.html#anchor-industrias">
-                  <p>Industrias</p>  
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54.5 29.5" style="enable-background:new 0 0 54.5 29.5;" xml:space="preserve" class="show-options" id="arrow-ind">
-                  <defs>
-                  </defs>
-                  <polyline class="st0" points="1.5,3 26.5,28 53,1.5 "/>
-                  </svg>
-              </a>
-              <ul id="under-industrias">
-                <li class="healthcare close"><a href="industrias/healthcare.html">Cuidado de la salud</a></li>
-                <li class="banks close"><a href="industrias/banks.html">Bancos y uniones de crédito</a></li>
-                <li class="legal close"><a href="industrias/legal.html">Legal</a></li>
-                <li class="education close"><a href="industrias/education.html">Educación</a></li>
-                <li class="nonprofit close"><a href="industrias/nonprofit.html">Sin fines de lucro</a></li>
-                <li class="gov close"><a href="industrias/government.html">Gobierno</a></li>
-                <li class="manufacturing close"><a href="industrias/manufacturing.html">Fábricas</a></li>
-                <li class="retail close"><a href="industrias/retail.html">Minoristas</a></li>
-                <li class="professional close"><a href="industrias/professional.html">Servicios profesionales</a></li>
-                <li class="financial close"><a href="industrias/financial.html">Servicios financieros</a></li>
-              </ul>
+            <li class="nav-li hide" id="security-li">
+              <a href="security-ops.html">Ops de seguridad</a>
               <div class="underline">
                 <span class="line"></span>
               </div>
@@ -377,6 +356,31 @@
                 </svg>    
               </a>
             </li>
+            <li id="industrias-li" class="nav-li hide">
+              <a href="index.html#anchor-industrias">
+                  <p>Industrias</p>  
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54.5 29.5" style="enable-background:new 0 0 54.5 29.5;" xml:space="preserve" class="show-options" id="arrow-ind">
+                  <defs>
+                  </defs>
+                  <polyline class="st0" points="1.5,3 26.5,28 53,1.5 "/>
+                  </svg>
+              </a>
+              <ul id="under-industrias">
+                <li class="healthcare close"><a href="industrias/healthcare.html">Cuidado de la salud</a></li>
+                <li class="banks close"><a href="industrias/banks.html">Bancos y uniones de crédito</a></li>
+                <li class="legal close"><a href="industrias/legal.html">Legal</a></li>
+                <li class="education close"><a href="industrias/education.html">Educación</a></li>
+                <li class="nonprofit close"><a href="industrias/nonprofit.html">Sin fines de lucro</a></li>
+                <li class="gov close"><a href="industrias/government.html">Gobierno</a></li>
+                <li class="manufacturing close"><a href="industrias/manufacturing.html">Fábricas</a></li>
+                <li class="retail close"><a href="industrias/retail.html">Minoristas</a></li>
+                <li class="professional close"><a href="industrias/professional.html">Servicios profesionales</a></li>
+                <li class="financial close"><a href="industrias/financial.html">Servicios financieros</a></li>
+              </ul>
+              <div class="underline">
+                <span class="line"></span>
+              </div>
+            </li>
             <li class="nav-li close hide">
               <a href="index.html#anchor-about">Nosotros</a>
               <div class="underline">
@@ -509,19 +513,19 @@
         <h2>Nuestros servicios</h2>
         <div class="anchor" id="anchor-servicios"></div>
         <div id="services-icons">
-            <div class="icon cyber" data-aos="flip-left" data-aos="flip-left" data-aos-offset="25">
-              <img src="../img/cyber-icon.png" alt="">
-            <p>Análisis forense</p>
-            <p>+</p>
-            </div>
-            <div class="icon incident" data-aos="flip-left" data-aos-offset="50">
+            <div class="icon incident" data-aos="flip-left" data-aos-offset="25">
               <img src="../img/incident-icon.png" alt="">
                 <p>Respuesta a incidentes</p>
                 <p>+</p>
             </div>    
-            <div class="icon remote" data-aos="flip-left" data-aos-offset="75">
+            <div class="icon remote" data-aos="flip-left" data-aos-offset="50">
               <img src="../img/remote-icon.png" alt="">
                 <p>Trabajo remoto</p>
+                <p>+</p>
+            </div>
+            <div class="icon risk" data-aos="flip-left" data-aos-offset="75">
+              <img src="../img/risk-icon.png" alt="">
+                <p>Evaluación de riesgos</p>
                 <p>+</p>
             </div>
             <div class="icon framework" data-aos="flip-left" data-aos-offset="100">
@@ -529,58 +533,38 @@
                 <p>Evaluación de Infraestructura</p>
                 <p>+</p>
             </div>
-            <div class="icon risk" data-aos="flip-left" data-aos-offset="125">
-              <img src="../img/risk-icon.png" alt="">
-                <p>Evaluación de riesgos</p>
-                <p>+</p>
-            </div>
-            <div class="icon pci" data-aos="flip-left" data-aos-offset="150">
+            <div class="icon pci" data-aos="flip-left" data-aos-offset="125">
               <img src="../img/pci-icon.png" alt="">
                 <p>Cumplimiento de PCI DSS</p>
                 <p>+</p>
             </div>
-            <div class="icon penetration" data-aos="flip-left" data-aos-offset="175">
+            <div class="icon penetration" data-aos="flip-left" data-aos-offset="150">
               <img src="../img/penetration-icon.png" alt="">
                 <p>Pruebas de penetración</p>
                 <p>+</p>
             </div>
-            <div class="icon soc" data-aos="flip-left" data-aos-offset="200">
-              <img src="../img/soc-icon.png" alt="">
-                <p>Auditoría<br>SOC 2</p>
-                <p>+</p>
-            </div>
-            <div class="icon social" data-aos="flip-left" data-aos-offset="225">
+            <div class="icon social" data-aos="flip-left" data-aos-offset="175">
               <img src="../img/social-icon.png" alt="">
                 <p>Ingeniería Social</p>
                 <p>+</p>
             </div>
-            <div class="icon vendor" data-aos="flip-left" data-aos-offset="250">
+            <div class="icon vendor" data-aos="flip-left" data-aos-offset="200">
               <img src="../img/vendor-icon.png" alt="">
                 <p>Riesgos de proveedores</p>
                 <p>+</p>
             </div>
-            <div class="icon virtual" data-aos="flip-left" data-aos-offset="275">
+            <div class="icon virtual" data-aos="flip-left" data-aos-offset="225">
               <img src="../img/virtual-icon.png" alt="">
             <p>CISO <br>Virtual</p>
             <p>+</p>
             </div>
-            <div class="icon vulnerability" data-aos="flip-left" data-aos-offset="300">
+            <div class="icon vulnerability" data-aos="flip-left" data-aos-offset="250">
               <img src="../img/vulnerability-icon.png" alt="">
                 <p>Evaluación de vulnerabilidad</p>
                 <p>+</p>
             </div>
         </div>
-        <div class="services-text cyber show">
-            <div class="service-info">
-            <h3>Análisis Cibernético Forense</h3>
-            <p>Nuestras soluciones forenses le brindarán contexto de ataque, visibilidad en toda la infraestructura, experiencia codificada, inteligencia enriquecida y conocimientos adquiridos a partir de la experiencia de primera línea en respuesta a las amenazas más impactantes del mundo. Por lo tanto, tendrá todo lo que necesita para detectar, clasificar, investigar y minimizar rápidamente el impacto de los ataques.</p>
-            <a href="servicios/analisis-forense.html">Leer más +</a>
-            </div>
-            <div class="service-img">
-              <img src="../img/cyber.png" alt="">
-            </div>
-        </div>
-        <div class="services-text incident">
+        <div class="services-text incident show">
             <div class="service-info">
             <h3>Respuesta a Incidentes</h3>
             <p>Garantizamos un enfoque organizado para abordar y gestionar las consecuencias de una violación de seguridad o ataque cibernético. Nuestro objetivo es manejar la situación de una manera que limite el daño y reduzca el tiempo y los costos de recuperación.
@@ -646,17 +630,6 @@
             <img src="../img/penetration.png" alt="">
           </div>
         </div>
-        <div class="services-text soc">
-          <div class="service-info">
-          <h3>Auditoría SOC 2</h3>
-          <p>Ya sea que se enfrente a los requisitos reglamentarios de SOC 2 o las demandas de la administración, podemos ayudarlo a prepararse para una auditoría de SOC 2 a través de nuestras evaluaciones de preparación.
-          </p>
-          <a href="servicios/auditoria-soc.html">Leer más +</a>
-          </div>
-          <div class="service-img">
-            <img src="../img/soc.png" alt="">
-          </div>
-        </div>
         <div class="services-text social">
           <div class="service-info">
           <h3>Ingeniería Social</h3>
@@ -709,7 +682,7 @@
     </div>
 
     <div id="industrias" data-aos="fade-up" data-aos-offset="300">
-      <h2>Industrias</h2>
+      <h2>Industrias a las que servimos</h2>
       <div class="anchor" id="anchor-industrias"></div>
       <div id="industrias-icons">
           <div class="icon-ind health" data-aos="flip-left" data-aos-offset="25">

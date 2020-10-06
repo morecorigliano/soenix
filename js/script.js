@@ -10,8 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-////// click en icono y mostrar su respectivo texto ////////
-
 ////// servicios ////////
 
 var icon = document.getElementsByClassName("icon");
