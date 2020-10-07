@@ -219,10 +219,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
-  left: .4rem; }
-  nav.nav-es {
-    left: 0; }
+  position: relative; }
 
 nav #nav-list {
   display: flex;
@@ -275,6 +272,17 @@ nav #nav-list .nav-li {
       width: .52rem;
       margin-left: .1rem;
       display: inline-block; }
+  nav #nav-list .nav-li#security-li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; }
+    nav #nav-list .nav-li#security-li a svg {
+      width: .65rem;
+      margin-left: .1rem;
+      display: inline-block; }
+      nav #nav-list .nav-li#security-li a svg path {
+        fill: #36ba5a; }
   nav #nav-list .nav-li:nth-of-type(9) a {
     color: #fcfcfc;
     font-weight: 700;
@@ -1592,7 +1600,7 @@ footer {
       text-transform: uppercase; }
 
 #main-sec {
-  background: #033965; }
+  background: #033165; }
 
 #banner-security {
   position: relative;
@@ -1603,7 +1611,11 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  background: linear-gradient(104deg, rgba(9, 11, 65, 0.65) 0%, rgba(9, 11, 65, 0.65) 100%), url(../img/security.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
   #banner-security h2 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -1650,7 +1662,7 @@ footer {
           fill: #313184; }
 
 .article-sec {
-  border-top: 0.01rem solid rgba(245, 245, 245, 0.514);
+  border-top: 0.01rem solid #fff235;
   padding: 2rem;
   display: flex;
   flex-direction: row;
@@ -1673,16 +1685,16 @@ footer {
       font-weight: 500;
       line-height: 1;
       letter-spacing: 0.05rem;
-      color: #fcfcfc;
+      color: #fff235;
       text-transform: uppercase; }
     .article-sec .icon span {
       display: block;
       width: .02rem;
       height: 1.5rem;
-      background-color: #fcfcfc;
+      background-color: #fff235;
       margin: .4rem 0; }
     .article-sec .icon img {
-      width: 65%;
+      width: 90%;
       -webkit-animation: bounce 1.5s ease-in-out infinite; }
 
 @-webkit-keyframes bounce {
@@ -1701,12 +1713,6 @@ footer {
       letter-spacing: 0.05rem;
       color: #fcfcfc;
       text-transform: uppercase; }
-    .article-sec .text h4 {
-      font-size: 0.5rem;
-      font-weight: 600;
-      line-height: 1.3;
-      letter-spacing: 0.05rem;
-      color: #fcfcfc; }
     .article-sec .text .subtitle {
       font-size: 0.6rem;
       font-weight: 700;
@@ -1733,7 +1739,7 @@ footer {
       font-weight: 600;
       line-height: 1.3;
       letter-spacing: 0.05rem;
-      color: #fcfcfc; }
+      color: #fff235; }
     .article-sec .text .sub-text p {
       font-size: 0.4rem;
       font-weight: 300;
@@ -1747,14 +1753,35 @@ footer {
         font-weight: 400;
         line-height: 1.3;
         letter-spacing: 0.05rem;
+        color: #fff235; }
+    .article-sec .text .item {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: .6rem; }
+      .article-sec .text .item:last-of-type {
+        margin-bottom: 0; }
+      .article-sec .text .item svg {
+        width: 1rem;
+        margin-right: .4rem; }
+        .article-sec .text .item svg path {
+          fill: #fff235; }
+      .article-sec .text .item .item-text h4 {
+        font-size: 0.5rem;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 0.05rem;
         color: #fcfcfc; }
+      .article-sec .text .item .item-text p {
+        margin: .4rem 0; }
 
 .five {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-top: 0.01rem solid rgba(245, 245, 245, 0.514);
+  border-top: 0.01rem solid #fff235;
   padding: 2rem 2rem 1rem 2rem; }
   .five h3 {
     width: 35%;
@@ -1789,13 +1816,13 @@ footer {
       font-weight: 500;
       line-height: 1;
       letter-spacing: 0.05rem;
-      color: #fcfcfc;
+      color: #fff235;
       text-transform: uppercase; }
     .five .icon span {
       display: block;
       width: .02rem;
       height: 10rem;
-      background-color: #fcfcfc;
+      background-color: #fff235;
       margin: .4rem 0; }
 
 .ending {
@@ -2085,8 +2112,7 @@ footer {
     #banner-security .text-wrp {
       width: 100%; }
   .article-sec {
-    border-top: 0.01rem solid rgba(245, 245, 245, 0.514);
-    padding: 2rem 1rem;
+    border-top: 0.04rem solid #fff235;
     display: block; }
     .article-sec .icon {
       width: 100%;
@@ -2094,6 +2120,7 @@ footer {
     .article-sec .text {
       width: 100%; }
   .five {
+    border-top: 0.04rem solid #fff235;
     flex-direction: column;
     padding: 2rem 1rem 1rem 1rem; }
     .five h3 {
